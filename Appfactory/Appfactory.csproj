@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3FA5034-8EDC-4A83-BD8D-2247F30592F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Appfactory</RootNamespace>
+    <AssemblyName>Appfactory</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAndStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAndStudent.Designer.cs">
+      <DependentUpon>AdminAndStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUser.Designer.cs">
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appfactory.cs" />
+    <Compile Include="AppHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppHelper.Designer.cs">
+      <DependentUpon>AppHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceStudent.Designer.cs">
+      <DependentUpon>AttendanceStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManagement.cs" />
+    <Compile Include="HelpStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpStudent.Designer.cs">
+      <DependentUpon>HelpStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterUser.Designer.cs">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashHome.Designer.cs">
+      <DependentUpon>SplashHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentView.Designer.cs">
+      <DependentUpon>StudentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStudent.Designer.cs">
+      <DependentUpon>UpdateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProfile.Designer.cs">
+      <DependentUpon>ViewProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStudent.Designer.cs">
+      <DependentUpon>ViewStudent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAndStudent.resx">
+      <DependentUpon>AdminAndStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUser.resx">
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppHelper.resx">
+      <DependentUpon>AppHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceStudent.resx">
+      <DependentUpon>AttendanceStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpStudent.resx">
+      <DependentUpon>HelpStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterUser.resx">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashHome.resx">
+      <DependentUpon>SplashHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentView.resx">
+      <DependentUpon>StudentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudent.resx">
+      <DependentUpon>UpdateStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProfile.resx">
+      <DependentUpon>ViewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStudent.resx">
+      <DependentUpon>ViewStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20170724-WA0003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20170724-WA0004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bchd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4frica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppFactoryi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\micros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microsfttt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\micro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\micr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homePage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Students-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNHCR.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
